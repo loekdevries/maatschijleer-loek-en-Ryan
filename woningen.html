@@ -1,0 +1,69 @@
+
+<!DOCTYPE html> <!--kleurmodel-->
+<html> <!--dit is het html-element-->
+<head>
+    <style>
+    body {
+      transition: background-color 0.5s; 
+    }
+
+        .center-right {
+      text-align: right; 
+    }
+
+    .center-right-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100vh; 
+    }
+          
+  </style>
+    <title>kleurmodel</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <div class="center-right-container">
+    <div class="center-right">
+        
+RGB & CMYK zijn kleurmodellen, waarmee kleuren opgebouwd kunnen worden.
+    
+RGB staat voor de kleuren: Rood, Groen & Blauw.
+Hiermee zijn diverse kleurencombinaties te maken, zoals zwart of hele felle kleuren maken aangezien het uitgangspunt licht is.
+Denk aan een computerscherm, waarbij een uitgeschakeld scherm zwart (kleurloos) is & middels toegevoegd licht ontstaan kleuren (additieve kleurmenging) binnen het RGB-spectrum.
+
+CMYK staat voor de kleuren: Cyaan, Magenta & Yellow.
+Door de kleuren cyaan, magenta & geel te mengen ontstaat geen zwart, hooguit donkerbruin, daarom is ook zwart (K) toegevoegd.
+Met deze vier kleuren in diverse doseringen te combineren met elkaar, zijn alle kleuren in het CMYK-spectrum na te bootsen.
+        <a href="https://www.youtube.com/watch?v=YtH9eXWuf3Y">uitlegvideo kleurmodelllen</a>
+<footer>
+    <p>Loek de Vries.</p>
+  </footer>
+    </div>
+        
+    <script>
+    const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF"]; // Voeg hier de gewenste kleuren toe
+    let currentIndex = 0;
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }
+
+    
+    setInterval(changeBackgroundColor, 1500);
+  </script>
+    
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="binairstelsel.html">Binair stelsel</a></li>
+    <li><a href="Kleurmodellen.html">Kleurmodellen</a></li>
+    <li><a href="werking-computer.html">Werking-computer</a></li>
+    <li><a href="compressietechnieken.html">Compressietechnieken</a></li>
+    </ul>
+    
+<img src="kleurmodelen.png" alt="deze site is nog niet af" width="500" height="300">
+
+</body>
+</html>
